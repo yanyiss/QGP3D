@@ -10,7 +10,7 @@ endif()
 list(APPEND QGP3D_LIB_LIST MC3D::MC3D)
 
 #gurobi
-find_package(Gurobi)
+find_package(Gurobi REQUIRED)
 
 if (Gurobi_FOUND)
   list(APPEND QGP3D_COMPILE_DEFINITIONS_PRV "QGP3D_WITH_GUROBI")
